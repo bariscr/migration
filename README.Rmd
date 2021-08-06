@@ -58,13 +58,12 @@ s %>%
   geom_parallel_sets_labels(angle = 0, hjust = p$h,
                             position = position_nudge(x = p$n),
                             sep = 0) +
-  scale_x_discrete(labels = c(orig = "Place of Previous Residence",
-  dest = "Place of Residence")) +
+  scale_x_discrete(labels = c(orig = "Place of Previous Residence", 
+                              dest = "Place of Residence")) +
   labs(y = "Migrants (thousands)", x = "",
        title = "Migration between NUTS-1 Regions",
-              subtitle = "Turkey, 2020",
-              caption = "Data source: Turkstat") +
+       subtitle = "Turkey, 2020",
+       caption = "Data source: Turkstat") +
   dark_theme_classic() 
-  
 ```
 
